@@ -1,0 +1,32 @@
+<BoxLayout>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    Label:
+        text: "Somme Initiale:"
+    TextInput:
+        id: somme_initiale_input
+
+    Label:
+        text: "Date Limite (YYYY-MM-DD):"
+    TextInput:
+        id: date_limite_input
+
+    Label:
+        text: "Montant à Dépenser:"
+    TextInput:
+        id: montant_depense_input
+
+    Label:
+        id: etat_somme_quotidienne_label
+        text: "État Somme Quotidienne:"
+
+    Button:
+        text: "Initialiser"
+        on_press: app.initialiser(root)
+
+    Button:
+        text: "Dépenser"
+        on_press: app.depenser(root)
+
